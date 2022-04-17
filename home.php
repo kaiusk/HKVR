@@ -18,16 +18,14 @@ get_header();
             <h2 class="text-primary text-center">Osta meilt neid häid asju!</h2>
             <div class="selling-items">
                 <?php
-                //query_posts(array('orderby'=>'title','order'=>'ASC'));
                 if (have_posts()) {
                     while (have_posts()) {
                         the_post(); ?>
                         <div class="selling-item <?= is_sticky() ? 'featured' : '' ?>">
                             <div class="selling-head">
                                 <h3><?php the_title(); ?></h3>
-                                <p>Argument #1
-                                    <?php
-                                    //print_r(get_tags());
+                                <p><?php
+                                   the_excerpt();
                                     ?></p>
                                 <?php if (is_sticky()) { ?>
                                     <span class="best-seller">Enim ostetud</span>
