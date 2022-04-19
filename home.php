@@ -16,6 +16,7 @@ get_header();
     <section class="second-section">
         <div class="container">
             <h2 class="text-primary text-center">Osta meilt neid häid asju!</h2>
+
             <div class="selling-items">
                 <?php
                 if (have_posts()) {

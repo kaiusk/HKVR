@@ -48,6 +48,6 @@ TLÜ Haapsalu Kolledži veebiprogrammeerimse õppeiane raames loodud Wordpressi 
 
 Kaius Karon - [kaiusk@tlu.ee](kaiusk@tlu.ee) 
 
-Project Link: [git@github.com:kaiusk/HKVR.git](git@github.com:kaiusk/HKVR.git)
+Project Link: [https://github.com/kaiusk/HKVR](https://github.com/kaiusk/HKVR)
 
 <p align="right">(<a href="#top">tagasi üles</a>)</p>

@@ -5,7 +5,7 @@ get_header();
         <div class="container">
             <div class="details-head">
                 <h1><?php the_title(); ?></h1>
-                <h2 class="text-primary">Parima toote slogan!</h2>
+                <h2 class="text-primary"><?php the_excerpt();?></h2>
             </div>
         </div>
     </section>
