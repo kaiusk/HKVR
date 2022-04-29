@@ -6,6 +6,7 @@ get_header();
             <div class="details-head">
                 <h1><?php the_title(); ?></h1>
                 <h2 class="text-primary"><?php the_excerpt();?></h2>
+                <h4 class="text-primary"><?php print_r(get_the_category()[0]->name); ?></h4>
             </div>
         </div>
     </section>
@@ -17,6 +18,7 @@ get_header();
                     <div class="box">
                         <i class="pe-7s-wine pe-5x text-primary"></i>
                         <h5>Hind</h5>
+
                         <?php echo get_post_meta(get_the_ID(), 'hind', true); ?>
                     </div>
                     <div class="box">

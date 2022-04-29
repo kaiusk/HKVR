@@ -33,7 +33,7 @@ TLÜ Haapsalu Kolledži veebiprogrammeerimse õppeiane raames loodud Wordpressi 
    ```sh
    git clone https://github.com/kaiusk/HKVR
    ```
-2. Wordpressis vali uueks teemaks HKVR 
+2. Wordpressis vali uueks teemaks HKVP 
 3. Lisa uued menüüd. Lubatud on kaks menüüd - ülemine pea-menüü ja alumine jaluse menüü
 4. Lisa postitused. Lisa ka väljavõte ja pilt.
 5. Postitustel luba lisaväljad. Lisa lisaväli 'hind' ja sellele vastav väärtus
