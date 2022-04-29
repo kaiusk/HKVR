@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap" rel="stylesheet">
-    <!--link rel="stylesheet" href="assets/css/style.css"!-->
     <?php
     wp_head();
     ?>
@@ -15,9 +14,10 @@
 <body>
 <header>
     <nav>
-        <div class="navbar">
-            <?php wp_nav_menu(['menu' => 'main']); ?>
-        </div>
+        <?php wp_nav_menu([
+            'menu'            => 'primary',
+            'container_class' => 'navbar'
+        ]); ?>
     </nav>
 </header>
 <main>

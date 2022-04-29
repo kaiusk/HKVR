@@ -26,7 +26,7 @@ get_header();
                             <div class="selling-head">
                                 <h3><?php the_title(); ?></h3>
                                 <p><?php
-                                   the_excerpt();
+                                    the_excerpt();
                                     ?></p>
                                 <?php if (is_sticky()) { ?>
                                     <span class="best-seller">Enim ostetud</span>
@@ -38,12 +38,14 @@ get_header();
                             </div>
                             <div class="selling-body">
                                 <ul>
-                                    <li>omadus</li>
-                                    <li>omadus</li>
-                                    <li>omadus</li>
-                                    <li>omadus</li>
+                                    <?php foreach (get_post_custom(get_the_ID()) as $key => $value) {
+                                        if (!str_starts_with($key, '_')) { ?>
+                                        <li><?= $key;?></li>
+                                    <?php }
+                                    }?>
                                 </ul>
-                                <a class="button <?= is_sticky() ? 'btn-primary' : 'btn-black' ?>" href="<?php the_permalink(); ?>">Osta</a>
+                                <a class="button <?= is_sticky() ? 'btn-primary' : 'btn-black' ?>"
+                                   href="<?php the_permalink(); ?>">Osta</a>
                             </div>
                         </div>
                         <?php

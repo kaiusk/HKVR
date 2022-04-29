@@ -221,7 +221,7 @@ footer .navbar ul li a {
     height: 118px;
     left: 0;
     position: absolute;
-    top: 30%;
+    top: 198px;
     width: 118px;
     right: 0;
     margin: auto;
@@ -229,7 +229,7 @@ footer .navbar ul li a {
 }
 
 .selling-item.featured .price {
-    top: calc(30% - 60px);
+    top: 138px;
 }
 
 .price h4 {
