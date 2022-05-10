@@ -20,14 +20,17 @@ get_header();
             <div class="selling-items">
                 <?php
                 if (have_posts()) {
-                    while (have_posts()) {
-                        the_post(); ?>
+                    //while (have_posts()) {
+                    for ($i = 0; $i < 4; $i++) { // max 4 posts
+                        if (!have_posts()) {
+                            break;
+                        }
+                        the_post();
+                        ?>
                         <div class="selling-item <?= is_sticky() ? 'featured' : '' ?>">
                             <div class="selling-head">
                                 <h3><?php the_title(); ?></h3>
-                                <p><?php
-                                    the_excerpt();
-                                    ?></p>
+                                <p><?php the_excerpt(); ?></p>
                                 <?php if (is_sticky()) { ?>
                                     <span class="best-seller">Enim ostetud</span>
                                 <?php } ?>
@@ -40,9 +43,9 @@ get_header();
                                 <ul>
                                     <?php foreach (get_post_custom(get_the_ID()) as $key => $value) {
                                         if (!str_starts_with($key, '_')) { ?>
-                                        <li><?= $key;?></li>
-                                    <?php }
-                                    }?>
+                                            <li><?= $key; ?></li>
+                                        <?php }
+                                    } ?>
                                 </ul>
                                 <a class="button <?= is_sticky() ? 'btn-primary' : 'btn-black' ?>"
                                    href="<?php the_permalink(); ?>">Osta</a>

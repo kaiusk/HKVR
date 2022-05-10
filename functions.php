@@ -63,7 +63,8 @@ function my_style_enqueue_styles() {
 
 add_action('wp_enqueue_scripts', 'my_style_enqueue_styles');
 
-// https://firstsiteguide.com/wordpress-copyright-notice/
+
+
 function create_copyright(): void {
     $all_posts = get_posts(
         'post_status=publish&order=ASC');
