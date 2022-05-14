@@ -36,8 +36,14 @@ TLÜ Haapsalu Kolledži veebiprogrammeerimse õppeiane raames loodud Wordpressi 
 2. Wordpressis vali uueks teemaks HKVP 
 3. Lisa uued menüüd. Lubatud on kaks menüüd - ülemine pea-menüü ja alumine jaluse menüü
 4. Lisa postitused. Lisa ka väljavõte ja pilt.
-5. Postitustel luba lisaväljad. Lisa lisaväli 'hind' ja sellele vastav väärtus
-6. Selleks et üht postitust esile tõsta (enimmüüdud) märgi see kui "Kinnista see postitus esilehele"
+5. Luba lisaväljad: 
+   1. postituse lisamise vaates klikid paremal üleval nurgas punktidega nupul (valikud)
+   2. valid viimase menüü 'Preferences'
+   3. vasakult valid 'Panels'
+   4. paremal all on näha 'Additional' ja selle all 'Lisaväljad'
+   5. lülita nupp sisse ja salvesta 
+6. Postitustel luba lisaväljad. Lisa lisaväli 'hind' ja sellele vastav väärtus
+7. Selleks et üht postitust esile tõsta (enimmüüdud) märgi see kui "Kinnista see postitus esilehele"
 
 <p align="right">(<a href="#top">tagasi üles</a>)</p>
 
